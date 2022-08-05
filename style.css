@@ -7,7 +7,6 @@
   text-decoration: none;
 }
 
-
 .scroll-active {
   background-color: white;
   transition: background-color 0.5s ease-in-out;
@@ -18,7 +17,7 @@
   z-index: -100;
   position: relative;
   width: 100%;
-  height: 90vh;
+  /* height: 50%; */
 }
 .logodiv {
   padding: 10px 20px;
@@ -78,7 +77,7 @@
 }
 
 #heroText {
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: #586cb2;
   text-align: end;
 }
@@ -93,33 +92,45 @@
   border: none;
   background-color: #586cb2;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border-radius: 10px;
   margin: 10px 0;
   float: right;
 }
 
+#teamBtn {
+  border: none;
+  background-color: #586cb2;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  margin: 10px 0;
+  margin-top: 40px;
+}
+.btndivTeam {
+  display: flex;
+  justify-content: center;
+}
+
 .flexdivcenter {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 .contactUs {
-    border: none;
-    background-color: #586cb2;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin: 10px 0;
-    position: relative;
-    bottom: 250px;
-
+  border: none;
+  background-color: #586cb2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  position: relative;
+  bottom: 250px;
 }
-
 
 .headers {
   margin-left: 40px;
-  border-bottom: #587cb2 2px solid;
+  border-bottom: #586cb2 2px solid;
   width: 60%;
   padding: 10px;
 }
@@ -130,36 +141,52 @@
 
 .headerLarge {
   font-size: 2rem;
-  color: #587cb2;
+  color: #586cb2;
   margin-left: 50px;
   font-weight: 600;
 }
 
+#firstSection {
+  margin-top: -20px;
+}
 .greyblock {
-    background-color: #f5f5f5;
-    height: 800px;
-    position: relative;
-    bottom: 35px;
-    padding-top: 50px;
+  background-color: #f5f5f5;
+  height: 800px;
+  position: relative;
+  bottom: 35px;
+  padding-top: 50px;
+}
+
+.greyblock1 {
+  background-color: #f5f5f5;
+  height: 700px;
+  /* position: relative;
+  bottom: 200px; */
+  padding-top: 50px;
+}
+
+.mapDiv {
+  height: max-content;
+  position: relative;
+  bottom: 175px;
+  padding-top: 50px;
 }
 .icon {
-    background-color: #98aecd;
-    margin: 50px;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-  }
-
+  background-color: #98aecd;
+  margin: 50px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
 
 .icongridwrap {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .icongrid {
-    position: relative;
-    bottom: 250px;
+  position: relative;
+  bottom: 250px;
   display: grid;
   width: 80%;
   justify-items: center;
@@ -171,63 +198,268 @@
     "iconText4 iconText5 iconText6";
 }
 
-
-
-
-
 #icon1 {
-    grid-area: icon1;
+  grid-area: icon1;
 }
 
 #icon2 {
-    grid-area: icon2;
+  grid-area: icon2;
 }
 
 #icon3 {
-    grid-area: icon3;
+  grid-area: icon3;
 }
 
 #icon4 {
-    grid-area: icon4;
+  grid-area: icon4;
 }
 
 #icon5 {
-    grid-area: icon5;
+  grid-area: icon5;
 }
 
 #icon6 {
-    grid-area: icon6;
+  grid-area: icon6;
 }
 
 #iconHeading1 {
-    grid-area: iconText1;
-     text-align: center;
+  grid-area: iconText1;
+  text-align: center;
 }
 
 #iconHeading2 {
-    grid-area: iconText2;
-    text-align: center;
+  grid-area: iconText2;
+  text-align: center;
 }
 
 #iconHeading3 {
-    grid-area: iconText3;
-    text-align: center;
+  grid-area: iconText3;
+  text-align: center;
 }
 #iconHeading4 {
-    grid-area: iconText4;
-    text-align: center;
-}#iconHeading5 {
-    grid-area: iconText5;
-    text-align: center;
+  grid-area: iconText4;
+  text-align: center;
+}
+#iconHeading5 {
+  grid-area: iconText5;
+  text-align: center;
 }
 
 #iconHeading6 {
-    grid-area: iconText6;
-    text-align: center;
+  grid-area: iconText6;
+  text-align: center;
 }
 
-
 #secondSection {
+  position: relative;
+  bottom: 210px;
+}
+
+.meetTeamdiv {
+  display: flex;
+  position: relative;
+  bottom: 180px;
+}
+
+.meetTeamdiv img {
+  width: 45vw;
+  padding: 30px;
+  margin-left: 20px;
+  max-height: 350px;
+  max-width: max-content;
+}
+
+.teamPara {
+  padding: 30px;
+  align-self: center;
+}
+.teamPara p {
+  font-size: 0.9rem;
+}
+
+/* #blueBox {
+background-color: #98aecd;
+width: 40%;
+height: 200px;
+position: relative;
+top: 85px;
+} */
+
+#thirdSection {
+  position: relative;
+  top: 480px;
+}
+
+.cardDiv {
+  position: relative;
+  top: -100px;
+  display: grid;
+  grid-template-areas: "card1 card2 card3";
+  width: 90vw;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 30px;
+  padding-left: 0px;
+
+  grid-template-columns: 33% 33% 33%;
+}
+
+.card1 {
+  text-align: center;
+  grid-area: card1;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.card2 {
+  text-align: center;
+  grid-area: card2;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+  padding: 20px;
+}
+
+.card3 {
+  grid-area: card3;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  text-align: center;
+  padding: 20px;
+}
+
+.card1 p,
+.card2 p,
+.card3 p {
+  font-size: 0.8rem;
+}
+
+.cardDiv img {
+  height: 280px;
+  width: auto;
+  padding-bottom: 30px;
+  object-fit: cover;
+}
+
+.mapouter {
+  width: 100% !important;
+  position: relative;
+  bottom: 160px;
+}
+
+#fourthSection {
+  margin-top: 80px;
+}
+
+.forms {
+  display: grid;
+  grid-template-areas: "form aside";
+  grid-template-columns: 3fr 1fr;
+  position: relative;
+  bottom: 170px;
+}
+
+form {
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+  padding: 30px;
+  /* left: 20px; */
+}
+.forms input {
+  display: block;
+  margin: 10px;
+  width: 100%;
+  grid-area: form;
+  font-size: 0.8rem;
+  border: #586cb2 solid 1px;
+  padding: 5px;
+}
+
+.forms p {
+  margin-right: 30px;
+  background-color: #98aecd;
+  padding: 30px;
+  color: white;
+  position: relative;
+  bottom: 50px;
+  font-size: 0.9rem;
+  right: -30px;
+  align-self: center;
+}
+
+textarea {
+  width: 100%;
+  margin-left: 10px;
+  height: 90px;
+  font-size: 0.9rem;
+  border: #586cb2 solid 1px;
+  padding: 5px;
+  color: gray;
+}
+
+footer {
+  background-color: #f5f5f5;
+  height: 220px;
+  position: relative;
+  bottom: 180px;
+  margin-bottom: -180px;
+}
+
+.footerDiv {
+  width: 100%;
+  justify-items: center;
+  display: grid;
+  grid-template-areas: "footer1 footer2 footer3 footer4";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.logodiv-footer,
+.footer2,
+.footer3,
+.footer4 {
+  margin: 30px;
+  color: #404040;
+}
+
+#lastDiv {
+  text-align: center;
+  font-size: 0.7rem;
+  background-color: lightgray;
+  padding: 5px 0;
+}
+
+.logodiv-footer p {
+  font-size: 0.7rem;
+}
+
+.footer2 h2,
+.footer2 p {
+  font-size: 0.7rem;
+}
+.footer3 h2,
+.footer3 p {
+  font-size: 0.7rem;
+}
+.footer4 h2,
+.footer4 p {
+  font-size: 0.7rem;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+  #mainSection {
+
     position: relative;
-    bottom: 200px;
+    bottom: 680px !important;
+  }
+
+  #bookBtn{
+    position: relative;
+    bottom: 20px;
+  }
 }
