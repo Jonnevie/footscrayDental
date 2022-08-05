@@ -4,13 +4,9 @@
   padding: 0;
   font-family: "montserrat";
   font-size: 18px;
+  text-decoration: none;
 }
-body {
-  /* background-image: url("./assets/heroBanner.jpg");
-  background-size: 120vw;
-  background-repeat: no-repeat;
-  background-position: 0px -0px; */
-}
+
 
 .scroll-active {
   background-color: white;
@@ -21,12 +17,10 @@ body {
 #heroImage {
   z-index: -100;
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 90vh;
 }
 .logodiv {
-  /* position: fixed;
-  top: 0; */
   padding: 10px 20px;
 }
 
@@ -44,7 +38,6 @@ body {
 
 #heroImage {
   background-image: url("./assets/heroBanner1.png");
-  /* background-position: -5px 10px; */
   background-size: cover;
   background-repeat: no-repeat;
   height: 95vh;
@@ -80,7 +73,7 @@ body {
   padding-right: 30px;
   margin-top: 80px;
   position: relative;
-  bottom: 525px;
+  bottom: 575px;
   margin-bottom: -370px;
 }
 
@@ -106,6 +99,24 @@ body {
   float: right;
 }
 
+.flexdivcenter {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.contactUs {
+    border: none;
+    background-color: #586cb2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    position: relative;
+    bottom: 250px;
+
+}
+
+
 .headers {
   margin-left: 40px;
   border-bottom: #587cb2 2px solid;
@@ -124,28 +135,99 @@ body {
   font-weight: 600;
 }
 
-.icons {
+.greyblock {
+    background-color: #f5f5f5;
+    height: 800px;
+    position: relative;
+    bottom: 35px;
+    padding-top: 50px;
+}
+.icon {
+    background-color: #98aecd;
+    margin: 50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+
+
+.icongridwrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.icongrid {
+    position: relative;
+    bottom: 250px;
   display: grid;
+  width: 80%;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     "icon1 icon2 icon3"
-    "iconText1 iconText2 iconText3";
+    "iconText1 iconText2 iconText3"
+    "icon4 icon5 icon6"
+    "iconText4 iconText5 iconText6";
 }
 
-.iconsHeadings {
-  display: grid;
-  justify-content: center;
-  grid-template-areas:
-    "icon1 icon2 icon3"
-    "iconText1 iconText2 iconText3";
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
+
+
+
+
+#icon1 {
+    grid-area: icon1;
 }
-.icon {
-  background-color: #587cb2;
-  margin: 50px;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
+
+#icon2 {
+    grid-area: icon2;
+}
+
+#icon3 {
+    grid-area: icon3;
+}
+
+#icon4 {
+    grid-area: icon4;
+}
+
+#icon5 {
+    grid-area: icon5;
+}
+
+#icon6 {
+    grid-area: icon6;
+}
+
+#iconHeading1 {
+    grid-area: iconText1;
+     text-align: center;
+}
+
+#iconHeading2 {
+    grid-area: iconText2;
+    text-align: center;
+}
+
+#iconHeading3 {
+    grid-area: iconText3;
+    text-align: center;
+}
+#iconHeading4 {
+    grid-area: iconText4;
+    text-align: center;
+}#iconHeading5 {
+    grid-area: iconText5;
+    text-align: center;
+}
+
+#iconHeading6 {
+    grid-area: iconText6;
+    text-align: center;
+}
+
+
+#secondSection {
+    position: relative;
+    bottom: 200px;
 }
